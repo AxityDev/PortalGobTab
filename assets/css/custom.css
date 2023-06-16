@@ -1,0 +1,226 @@
+@font-face {
+  font-family: MonserratLight;
+  src: url("../fonts/Montserrat-Regular.ttf");
+}
+
+* {
+  box-sizing: border-box !important;
+}
+
+body {
+  color: #3a3a3a;
+  background: #f5f5f5;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+}
+
+.table-wrapper {
+  background: #fff;
+  padding: 20px 25px;
+  margin: 30px 0;
+  border-radius: 3px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+/*Otros estilos */
+
+.titulo-pagina {
+  display: inline-block;
+  color: #000;
+  background: #fff;
+  mix-blend-mode: multiply;
+  position: relative;
+}
+
+.titulo-pagina:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #ec00ff, #078dfc);
+  mix-blend-mode: screen;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.has-search .form-control {
+  padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
+}
+
+.card-results {
+  border: 1px solid rgb(0 0 0 / 0.05);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 3px 1px -2px rgba(0, 0, 0, 0.08),
+    0 1px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.card-results span {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bandera {
+  height: 20px;
+  width: 20px;
+  border: 1px solid #dedede;
+  display: inline-block;
+  margin: 0 5px;
+  border-radius: 50%;
+}
+
+.bandera-col {
+  background: linear-gradient(
+    to bottom,
+    #fcd20f 50%,
+    #003594 50%,
+    #003594 75%,
+    #cf0921 75%
+  );
+}
+
+.bandera-mex {
+  background: linear-gradient(
+    to right,
+    #006847 30%,
+    #ffffff 30%,
+    #ffffff 70%,
+    #ce1126 70%
+  );
+}
+
+.btn-flotante-degrade {
+  width: 45px;
+  height: 45px;
+  background: linear-gradient(
+    180deg,
+    rgba(154, 51, 254, 1) 0%,
+    rgba(87, 92, 254, 1) 100%
+  );
+  color: white;
+}
+
+.btn-flotante-degrade i{
+  font-size: 20px;
+}
+
+.btn-degrade {
+  display: inline-block;
+  color: #000;
+  background: #fff;
+  mix-blend-mode: multiply;
+  position: relative;
+  border: 1px solid #8441fe;
+  text-decoration: none;
+}
+
+.btn-degrade:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #ec00ff, #078dfc);
+  mix-blend-mode: screen;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: none;
+}
+
+.btn-degrade:active {
+  box-shadow: 0 2px 2px 0 rgba(132, 65, 254, 0.1),
+    0 3px 1px -2px rgba(132, 65, 254, 0.08), 0 1px 5px 0 rgba(132, 65, 254, 0.1);
+}
+
+#form_accesos input[name="form_personas"] {
+  width: 70%;
+  display: inline-block;
+}
+
+.btn-add-quit {
+  min-width: 10px !important;
+}
+
+input[name="form_personas"] {
+  width: 70%;
+  display: inline-block;
+}
+
+.btn-add-quit {
+  min-width: 10px !important;
+}
+
+/*Estilos para DataTables*/
+
+label > select[name$="_length"] {
+  display: inline-block !important;
+  width: auto !important;
+  padding: 3px 0px !important;
+  height: auto !important;
+  color: #350c46 !important;
+}
+
+.dataTables_filter > label > input {
+  border: 1px solid #350c46 !important;
+  border-radius: 3px !important;
+}
+
+.dataTables_filter {
+  margin-bottom: 10px;
+}
+
+.dataTables_wrapper > table {
+  clear: both;
+}
+
+
+.buttons-html5 {
+  color: #ffffff !important;
+  background-color: #027333 !important;
+  vertical-align: middle;
+  z-index: 1;
+  transition: 0.3s ease-out;
+  height: 26px !important;
+  font-size: 11px !important;
+  text-align: center !important;
+  letter-spacing: 0.5px !important;
+  border: none !important;
+  border-radius: 2px !important;
+  padding: 0 10px !important;
+  text-transform: uppercase !important;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  margin: 0 0 0 10px;
+}
+
+.buttonNext {
+  /*background-color: #4FAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 8px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.buttonNextShadow {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  background: linear-gradient(to bottom, #ec00ff, #078dfc);
+}
