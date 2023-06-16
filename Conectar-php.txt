@@ -4,22 +4,13 @@ class Conectar{
 
     public static function conexion() {
         try {
-            //$pdo = new PDO('sqlsrv:Server=localhost;Database=db_reportes_powerbi');
-            //$pdo = new PDO('sqlsrv:Server=portalgobiernotableros-dbserver-general.database.windows.net;Database=portalgobiernotableros-db-general', 'consultasbi', 'Ax1ty2@20*');
-            $pdo = new PDO('sqlsrv:Server=CO-L-PMC387862;Database=db_reportes_powerbi', 'sa', 'C0lombi@.2023');
+            $pdo = new PDO('sqlsrv:Server=NombreServidor;Database=NombreBaseDatos', 'UsuarioBD', 'PasswordBD');
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             return $pdo;
         } catch (exception $e) {
             die($e->getMessage());
         }
 
-}
-// DB_CONNECTION=sqlsrv
-// DB_HOST=portalgobiernotableros-dbserver-general.database.windows.net
-// DB_PORT=1433
-// DB_DATABASE=portalgobiernotableros-db-general
-// DB_USERNAME=consultasbi
-// 
 }
 ?>
 
